@@ -1,0 +1,314 @@
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+/* ------------------------------------------- */
+:root {
+  --general-text-color: #757575;
+  --link-hover-color: #2196f3;
+  --tit-text-color: #212121;
+  --white-text-color: #FFFFFF;
+  --contact-text-color:rgba(255, 255, 255, 0.6);
+  --bcg-filtr-color:#F5F4FA;
+  --bg-color-second:#2F303A;
+  --background-color-hover: #188CE8;
+}
+/* ------------------------------------------- */
+/* Сброс стилей */
+h1,h2,h3,h4,p,ul {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  /* margin: 0;
+  padding: 0; */
+}
+/* Сброс стилей */
+/* ------------------------------------------- */
+body {
+  background-color: var(--white-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--general-text-color);
+  font-size: 14px;
+}
+/* ------------------------------------------- */
+.container {
+  margin: 0 auto;
+  max-width: 1230px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* ------------------------------------------- */
+/* Hedder */
+
+.logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--link-hover-color);
+  text-decoration: none;
+  margin-right: 93px;
+}
+.std {
+  color: var(--tit-text-color);
+}
+.container-header {
+  display: flex;
+}
+.nav-item {
+  display: flex;
+}
+.nav-list {
+  display: flex;
+}
+.nav-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  text-decoration: none;
+  
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  line-height: 1.14;
+  color: var(--tit-text-color);
+
+}
+.nav-list .link.current {
+  color: var(--link-hover-color);
+}
+.nav-list a:hover,
+.nav-list a:focus {
+color: var(--link-hover-color); 
+}
+.contact .link{
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+.contact .link {
+padding-top: 32px;
+padding-bottom: 32px;
+}
+.contact .item + .item {
+    display: block;
+  margin-left: 50px;
+}
+.contact a {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--general-text-color);
+}
+.contact a:hover,
+.contact a:focus {
+  color: var(--link-hover-color);
+}
+/* Hedder */
+/* ------------------------------------------- */
+/* Section one */
+.main-tit{
+  background-color: var(--bg-color-second);
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.main-tit h1{
+  text-align: center;
+  margin: 0 auto 30px;
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.main-tit .button {
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--link-hover-color);
+  color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+.main-tit button:hover,
+.main-tit button:focus {
+  background-color: var(--background-color-hover);
+}
+/* Section one */
+/* ------------------------------------------- */
+/* Section two */
+.peculiarities-tit {
+  color: var(--tit-text-color);
+  font-weight: 700;
+  line-height: 1.14;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.peculiarities-par {
+  line-height: 1.71;
+}
+/* Section two */
+/* ------------------------------------------- */
+/* Section three */
+.second-tit {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  /* text-align: center; */
+  color: var(--tit-text-color);
+}
+/* Section three */
+/* ------------------------------------------- */
+/* Section four */
+.squad {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  /* text-align: center; */
+  color: var(--tit-text-color);
+}
+.squad-position {
+  font-size: 16px;
+  line-height: 1.18;
+  /* text-align: center; */
+}
+/* Section four */
+/* ------------------------------------------- */
+/* Filtr */
+.container-filtr{
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+
+}
+
+.container-filtr .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filtr {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: var(--tit-text-color);
+  background-color: var(--bcg-filtr-color);
+  font-family: Roboto,sans-serif;  
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.filtr:hover,
+.filtr:focus {
+  background-color: var(--link-hover-color);
+  color: var(--white-text-color);
+}
+
+/* Filtr */
+/* ------------------------------------------- */
+/* Project */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.project-list > .project-item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.container-project {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 94px;
+}
+
+.project-tit {
+  margin-bottom: 4px;
+  color: var(--tit-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-link {
+  text-decoration: none;
+}
+
+.picture{
+    display: block ;
+}
+
+.project-product {
+  color: var(--general-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+  
+}
+
+.project-title {
+  padding: 20px 24px;
+}
+/* Project */
+/* ------------------------------------------- */
+/* Footer */
+.container-basement {
+  background-color: var(--bg-color-second);
+}
+.basement-std {
+  color: var(--white-text-color);
+}
+.basement-contact {
+  margin-top: 9px;
+  color: var(--contact-text-color);
+  text-decoration: none;
+}
+.basement-contact:hover,
+.basement-contact:focus {
+  color: var(--link-hover-color);
+}
+.map {
+  text-decoration: none;
+  color: var(--white-text-color);
+}
+.basement-list {
+  margin-top: 20px;
+  font-style: normal;
+  line-height: 1.71;
+}
+.container-footer{
+  padding-left: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/* Footer */
+/* ------------------------------------------- */
