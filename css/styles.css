@@ -37,13 +37,26 @@ body {
 /* ------------------------------------------- */
 .container {
   margin: 0 auto;
-  max-width: 1230px;
+  max-width: 1200px;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+
+}
+.second-tit {
+  margin-top: 94px;
+  padding-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--tit-text-color);
 }
 /* ------------------------------------------- */
 /* Hedder */
+.container-header {
+  border-bottom:var(--general-text-color) solid 1px ;
+}
 
 .logo {
   padding-top: 24px;
@@ -59,13 +72,10 @@ body {
 .std {
   color: var(--tit-text-color);
 }
+
+.nav-item,
+.nav-list,
 .container-header {
-  display: flex;
-}
-.nav-item {
-  display: flex;
-}
-.nav-list {
   display: flex;
 }
 .nav-list .item:not(:last-child) {
@@ -106,7 +116,7 @@ padding-top: 32px;
 padding-bottom: 32px;
 }
 .contact .item + .item {
-    display: block;
+  display: block;
   margin-left: 50px;
 }
 .contact a {
@@ -122,7 +132,7 @@ padding-bottom: 32px;
 /* ------------------------------------------- */
 /* Section one */
 .main-tit{
-  background-color: var(--bg-color-second);
+  /* background-color: var(--bg-color-second); */
   text-align: center;
   margin: 0 auto;
   padding-top: 200px;
@@ -160,6 +170,11 @@ padding-bottom: 32px;
 /* Section one */
 /* ------------------------------------------- */
 /* Section two */
+.peculiarities-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+}
 .peculiarities-tit {
   color: var(--tit-text-color);
   font-weight: 700;
@@ -167,35 +182,64 @@ padding-bottom: 32px;
   font-size: 14px;
   text-transform: uppercase;
 }
+.peculiarities-title{
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+}
+
+.peculiarities-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .peculiarities-par {
+  margin-top: 10px;
   line-height: 1.71;
 }
+
 /* Section two */
 /* ------------------------------------------- */
 /* Section three */
-.second-tit {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  /* text-align: center; */
-  color: var(--tit-text-color);
+.doing-list{
+    display: flex;
+}
+.doing-item {
+  display: flex;
+}
+
+.doing-item:not(:last-child) {
+  margin-right: 30px;
 }
 /* Section three */
 /* ------------------------------------------- */
 /* Section four */
+.squad-list {
+      display: flex;
+      flex-wrap: wrap;
+}
 .squad {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  /* text-align: center; */
   color: var(--tit-text-color);
 }
+
 .squad-position {
   font-size: 16px;
   line-height: 1.18;
   /* text-align: center; */
 }
+.squad-item:not(:last-child) {
+  margin-right: 30px;
+}
+.squad-title{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.squad-position {
+  margin-top: 10px;
+}
+
 /* Section four */
 /* ------------------------------------------- */
 /* Filtr */
@@ -204,7 +248,6 @@ padding-bottom: 32px;
   justify-content: center;
   margin-top: 94px;
   margin-bottom: 50px;
-
 }
 
 .container-filtr .item:not(:last-child) {
@@ -277,12 +320,13 @@ padding-bottom: 32px;
 
 .project-title {
   padding: 20px 24px;
+  border: var(--link-hover-color) solid 1px;
 }
 /* Project */
 /* ------------------------------------------- */
 /* Footer */
 .container-basement {
-  background-color: var(--bg-color-second);
+  /* background-color: var(--bg-color-second); */
 }
 .basement-std {
   color: var(--white-text-color);
