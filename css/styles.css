@@ -52,6 +52,11 @@ body {
   text-align: center;
   color: var(--tit-text-color);
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* ------------------------------------------- */
 /* Hedder */
 .container-header {
@@ -173,7 +178,6 @@ padding-bottom: 32px;
 .peculiarities-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
 }
 .peculiarities-tit {
   color: var(--tit-text-color);
@@ -240,13 +244,15 @@ padding-bottom: 32px;
   margin-top: 10px;
 }
 
+.squad-foto {
+  display: flex;
+}
 /* Section four */
 /* ------------------------------------------- */
 /* Filtr */
 .container-filtr{
   display: flex;
   justify-content: center;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -291,7 +297,6 @@ padding-bottom: 32px;
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 94px;
 }
 
 .project-tit {
@@ -325,9 +330,9 @@ padding-bottom: 32px;
 /* Project */
 /* ------------------------------------------- */
 /* Footer */
-.container-basement {
-  /* background-color: var(--bg-color-second); */
-}
+/* .container-basement {
+  background-color: var(--bg-color-second);2
+} */
 .basement-std {
   color: var(--white-text-color);
 }
