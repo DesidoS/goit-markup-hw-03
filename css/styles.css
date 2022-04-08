@@ -219,6 +219,7 @@ body {
   background-color: var(--white-text-color);
   padding-top: 30px;
   padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
   border-right: var(--border-color) solid 1px;
   border-bottom: var(--border-color) solid 1px;
   border-left: var(--border-color) solid 1px;
