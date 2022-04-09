@@ -45,8 +45,7 @@ body {
 /* ------------------------------------------- */
 .container {
   margin: 0 auto;
-  max-width: 1200px;
-  width: 100%;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -233,6 +232,7 @@ body {
 .filtr-section{
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .filtr-section .item:not(:last-child) {
   margin-right: 8px;
@@ -258,15 +258,12 @@ body {
 /* Filtr */
 /* ------------------------------------------- */
 /* Project */
-.project-section {
-  width: 1170px;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
+    margin-top: 50px;
+
   margin-left: -30px;
   margin-top: -30px;
 }
